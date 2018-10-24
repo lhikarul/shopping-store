@@ -1,0 +1,201 @@
+@import all.sass
+
+
+// main
+.banner
+    background-image: url(../img/dessert/banner.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100%
+    height: 277px
+
+// item promote section
+.item-promote
+    display: flex
+    .item
+        width: calc(100% / 3)
+        position: relative
+        height: 180px
+        &:before
+            content: ''
+            width: 100%
+            height: 100%
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            display: block
+            filter: blur(2px)
+        .item-cover
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $colorGreen
+            opacity: 0.8
+            &.feature
+                background-color: $colorYellow
+        .promote-text
+            writing-mode: vertical-lr
+            margin: 0
+            position: absolute
+            font-size: 20px
+            letter-spacing: 2.5px
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            a
+                color: #fff
+            &.promote-feature-text a
+                color: $colorGreen
+
+.itemToday:before
+    background-image: url(../img/dessert/dessert-01.jpg)
+.itemRecommended
+    border-right: 1px solid #fff
+    &:before
+        background-image: url(../img/dessert/dessert-02.jpg)
+.newProduct:before
+    background-image: url(../img/dessert/dessert-03.jpg)
+@media (min-width: 768px)
+    .banner
+        max-width: 940px
+        width: calc(100% - 42px - 42px)
+        margin: 0 auto
+        height: 496px
+    .item-promote
+        position: relative
+        display: flex
+        justify-content: center
+        max-width: 780px
+        margin: 0 auto
+        top: -70px
+        .item
+            width: calc((100% - 246px)/3)
+            height: 256px
+
+// end of item promote section
+
+// intro why section
+.intro-why
+    .intro-img1
+        background: url(../img/dessert/dessert-04.jpg)center/cover no-repeat
+        width: 100%
+        height: 250px
+    .intro-img2
+        background: url(../img/dessert/dessert-05.jpg)center/cover no-repeat
+        width: 100%
+        height: 250px
+    .intro-content
+        background: $colorGrey
+        .text-box
+            padding: 30px
+        .intro-content-text
+            color: $colorLightGreen
+            font-size: 16px
+            font-weight: bold
+            line-height: 2
+            margin: 0
+
+@media (max-width: 767px)
+    .intro-title-lg
+        display: none
+
+
+@media (min-width: 768px)
+    .intro-title-sm
+        display: none
+    .padding-section
+        margin-bottom: 80px
+        background: $colorGrey
+    .why-box
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 960px
+        width: calc(100% - 84px)
+        height: 420px
+        margin: 0 auto
+        .intro-title-img-lg
+            height: 307.15px
+            position: relative
+            top: -76px
+        .intro-content    
+            .text-box
+                writing-mode: vertical-rl
+                padding: 16.6% 8% 16.6% 5.37%
+                letter-spacing: 3px
+        .intro-img1,.intro-img2
+            max-width: 460px
+            height: 460px
+        .intro-img2
+            order: 1
+    
+// end of why section
+
+// shoppping section
+.shopping-dessert
+    margin-bottom: 30px
+    .dessert-container
+    .dessert
+        max-width: 315px
+        margin: 0 auto
+        margin-bottom: 30px
+    .img-container
+        position: relative
+    .featured-tag
+        position: absolute
+        writing-mode: vertical-lr
+        background: $colorGreen
+        color: $colorGrey
+        left: 5.75%
+        padding: 10.08px 10.5px 9.24px 10.5px
+        letter-spacing: 5.8px
+    .featured-icon
+        position: absolute
+        right: 6.45%
+        top: 19px
+        font-size: 20px
+    .feature-dessert-img
+        height: 315px
+        width: 100%
+        display: block
+
+    .dessert-tag
+        display: flex
+        justify-content: space-around
+        height: 56px
+        align-items: center
+        font-size: 20px
+        color: $colorGreen
+        .dessert-price
+            font-weight: bold
+    .add-item-cart
+        height: 65px
+        line-height: 65px
+        font-size: 24px
+        text-align: center
+        font-weight: bold
+        color: $colorGreen
+        background: $colorGrey
+        cursor: pointer
+        &:hover
+            background: $colorGreen
+            color: #fff
+
+@media (min-width: 768px)
+    .intro-title-lg
+        text-align: center
+    .intro-title-img-lg
+        height: 328px
+    .dessert-container
+        display: flex
+        .dessert:first-child
+            padding-right: 10px
+        .dessert
+            & +.dessert
+                padding: 0 10px
+// end of shopping section
+
+

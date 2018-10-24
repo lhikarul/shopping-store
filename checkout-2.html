@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>甜點電商-結帳(2)</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/checkout-2.css">
+</head>
+<body class="checkout-2">
+
+    <!-- header -->
+    <header>
+            <div class="container">
+                <nav id="nav">
+                    <div class="navbar-icon"><i class="fas fa-bars"></i></div>
+                    <div class="logo-sm"><img class="logo-img-sm" src="img/logotype-lg-dark.svg" alt="logo"></div>
+                    <div class="logo-lg"><img src="img/logo-all-dark.svg" alt="logo" class="logo-img-lg"></div>
+                    <ul class="nav-text-lg">
+                        <a href="index.html"><li class="nav-text">首頁</li></a>
+                        <a href="product.html"><li class="nav-text">甜點</li></a>
+                        <a href="login.html"><li class="nav-text">登入</li></a>
+                    </ul>
+                    <div class="cart-icon">
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <div class="orderNum"></div>
+                    </div>
+
+                    <div class="shopping-box">
+                        <div class="shopping-cart">
+                            <!-- single itme -->
+                            <!-- <div class="cart-item">
+                                <img src="img/dessert/dessert-10.jpg" alt="" class="cart-item-img">
+                                <div class="cart-item-text">
+                                    <p class="cart-item-title">cart item</p>
+                                    <span>$</span>
+                                    <span class="cart-item-price">10.99</span>
+                                </div>
+                            </div> -->
+                            <!-- end of single item -->
+                        </div>
+                        
+                        <div class="cart-total">
+                            <div class="price-container">
+                                <h3>Total</h3>
+                                <h3>$<strong class="cart-total-price">0</strong></h3>
+                            </div>
+                        </div>
+                            
+                        <a href="cart.html" class="check-cart-btn">結帳</a>
+                        <a href="#" class="close-cart-btn">關閉</a>
+                    </div>
+                </nav>
+            </div>
+    </header>
+    <!-- end of header --> 
+    <main class="lg-wrapper">
+        <div class="wrapper-left">
+            <div class="check-shipping">
+                <h1 class="check-text">付款</h1>
+                <div class="progress">
+                    <div class="checkCircle active">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="checkCircle active"></div>
+                    <div class="checkCircle"></div>
+                </div>
+                <div class="input-form">
+                    <div class="input-item">
+                        <label>信用卡號</label>
+                        <div class="input flex">
+                            <input type="text" placeholder="9012-3456-7890-1234">
+                            <i class="fab fa-cc-visa"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="input-item">
+                        <label>持卡人姓名</label>
+                        <div class="flex">
+                            <div class="input mr-8"><input type="text" placeholder="王"></div>
+                            <div class="input"><input type="text" placeholder="小明"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-item">
+                        <label>有效期限</label>
+                        <div class="flex">
+                            <div class="input mr-8"><input type="number" placeholder="月"></div>
+                            <div class="input"><input type="number" placeholder="年"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-item">
+                        <label>背面末三碼</label>
+                        <div class="input"><input type="text" placeholder="123" class="w-50"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="shipping-text"><a href="checkout-3.html">下一步</a></h1>
+        </div>
+        <div class="wrapper-right">
+            <div class="order">
+                    <h1 class="order-title">訂單摘要</h1>
+                    <div class="order-infor order-first-padding">
+                        <div class="order-text">小計</div>
+                        <div class="order-price">NT $2700</div>
+                    </div>
+                    <div class="order-infor">
+                        <div class="order-text">運費</div>
+                        <div class="order-price">NT $300</div>
+                    </div>
+
+                    <div class="order-infor order-total">
+                        <div class="order-text">總價</div>
+                        <div class="total-order-price">NT $3000</div>
+                    </div>
+            </div>
+
+            <h1 class="order-title">購物清單</h1>
+            <div class="order-list">             
+                <div class="cart-list">
+                        <img src="img/dessert/dessert-11.jpg" alt="" class="cart-img">
+                    <div class="cart-infor">
+                        <div class="item-name">葡萄蛋糕</div>
+                        <div class="item-price">NT $450</div>
+                    </div>
+                </div>
+                <div class="cart-list">
+                        <img src="img/dessert/dessert-05.jpg" alt="" class="cart-img">
+                    <div class="cart-infor">
+                        <div class="item-name">水果蛋糕</div>
+                        <div class="item-price">NT $450</div>
+                    </div>
+                </div>
+                <div class="cart-list">
+                        <img src="img/dessert/dessert-08.jpg" alt="" class="cart-img">
+                    <div class="cart-infor">
+                        <div class="item-name">水果蛋糕</div>
+                        <div class="item-price">NT $450</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>  
+            <div class="email-section">
+                <div class=" email-container">
+                    <div class="footer-subscription">
+                        <img src="img/logo-light.svg" alt="" class="footer-logo">
+                        <div class="subscription-text">訂閱你我的甜蜜郵件</div>
+                    </div>
+                    <div class="input-email">
+                        <i class="fas fa-envelope email-icon"></i>
+                        <input type="text" class="input-text">
+                        <div class="footer-right-arrow">
+                            <i class="fas fa-arrow-right right-arrow-icon"></i>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-us">
+                    <div class="about-us">
+                        <div class="footer-logo">
+                                <img src="img/logotype-sm-dark.svg" alt="" class="footer-why-icon">
+                        </div>
+    
+                        <div class="footer-info">
+                                <div class="info-tel">07-1234-5678</div>
+                                <div class="info-email">sweetaste@gmail.com</div>
+                                <div class="info-address">800 高雄市新興區幸福路520號</div>
+                            </div>
+    
+                        <div class="social-media">
+                            <i class="line-icon"><img src="img/ic-line@.svg" alt="line-icon" class="social-media-icon"></i>
+                            <i class="facebook-icon"><img src="img/ic-facebook-footer.svg" alt="facebook-icon" class="social-media-icon"></i>
+                        </div>
+                    </div>
+                    <div class="about-us-2">
+                        <div class="footer-logo-lg">
+                            <img src="img/why-log-04.svg" alt="" class="footer-logo-img-lg">
+                        </div>
+                        <div class="copyright">© 2018 Sweetaste* All Rights Reserved</div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script/all.js"></script>
+    <script src="script/nav-cart.js"></script>
+    <script src="script/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import all.sass
+
+.flex
+    display: flex
+.mr-4
+    margin-right: 4px
+.ml-4
+    margin-left: 4px
+
+
+.checkout-1
+    .check-shipping
+        position: relative
+        background-color: $colorGreen
+        padding: 30px
+        color: #fff
+        .check-text
+            margin-bottom: 30px
+            font-size: 36px
+        .input-form
+            font-size: 20px
+        .input-item
+            width: 100%
+            .input
+                margin: 12px 0 20px 0
+                input[type="text"]
+                    width: 100%
+                    padding: 17px 20px
+                    box-sizing: border-box
+                    border: none
+                    outline: none
+                    height: 56px
+                    background: $colorGrey
+                    &::placeholder
+                        color: $colorGreen
+                select
+                    width: 100%
+                    padding: 17px 20px
+                    height: 56px
+                    margin-bottom: 8px
+                    background: $colorGrey
+                    &::placeholder
+                        color: $colorGreen
+    .shipping-text
+        text-align: center
+        background-color: $colorYellow
+        font-size: 24px
+        font-weight: bold
+        height: 65px
+        line-height: 65px
+        a
+            color: $colorGreen
+

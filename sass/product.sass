@@ -1,0 +1,141 @@
+@import all.sass
+
+
+.product
+    // banner section
+    .banner
+        background: url(../img/dessert/dessert-09.jpg)center/cover no-repeat
+        height: 277px
+        margin-top: 84px
+        .banner-logo
+            text-align: right
+            padding: 30px 30px 29px 0
+        .banner-logo-text
+            height: 218.52px
+    
+    @media (min-width: 768px)
+        .banner
+            max-width: 940px
+            margin: 0 auto
+            margin-top: 84px
+            height: 496px
+            .banner-logo
+                padding: 40px 40px 128.22px 0
+            .banner-logo-text
+                height: 327.79px
+    // end of banner section
+
+    // variety section
+    .variety-container
+        color: $colorGreen
+        text-align: center
+        font-size: 24px
+        .variety-text
+            border: 1px solid $colorGrey
+            font-weight: bold
+            height: 65px
+            line-height: 65px
+            letter-spacing: 1px
+            cursor: pointer
+            &:hover
+                background: $colorGreen
+                color: #fff
+        .desserts-type
+            background: $colorGreen
+            color: #fff
+        .all-desserts
+            background: $colorGrey
+    // end of variety section
+
+    // desserts-list section
+    .desserts-list-container
+        text-align: center
+        color: $colorGreen
+        .dessert
+            max-width: 315px
+            margin: 0 auto
+            margin-top: 30px
+        .dessert-img-container
+            position: relative
+            .dessert-list-img
+                width: 100%
+                height: 315px
+            .dessert-featured-tag
+                background-color: $colorGreen
+                color: $colorGrey
+                padding: 10.08px 10.05px 9.24px 10.05px
+                position: absolute
+                left: 13.6%
+                letter-spacing: 5.8px
+                writing-mode: vertical-lr
+            .dessert-heart-icon
+                font-size: 20px
+                position: absolute
+                right: 14.45%
+                top: 19px
+        .dessert-infor
+            font-size: 20px
+            display: flex
+            align-items: center
+            height: 56px
+            .dessert-name
+                border-right: 1px solid $colorGrey
+                padding: 2px 37px
+                letter-spacing: 1.4px
+            .dessert-price
+                font-weight: bold
+                padding: 2px 25px
+                letter-spacing: 1.3px
+        .add-item-cart
+            background-color: $colorGrey
+            font-size: 24px
+            font-weight: bold
+            height: 65px
+            line-height: 65px
+            cursor: pointer
+            &:hover
+                background: $colorGreen
+                color: #fff
+
+
+    @media (min-width: 768px)
+        .desserts-list-container
+            margin-top: 30px
+            .dessert
+                margin-bottom: 20px
+                display: inline-block
+                margin-left: 18px
+                .dessert-name
+                    padding: 2px 30px
+
+    @media (min-width: 992px)
+        .variety-lg
+            width: 300px
+
+        .dessert-content
+            display: flex
+            max-width: 940px
+            margin: 0 auto
+            margin-top: 60px
+            .desserts-list-container
+                margin-top: 0
+            .dessert-list-lg
+                width: 640px
+                .dessert
+                    margin-top: 0
+                    margin-bottom: 20px
+                    width: 300px
+                    display: inline-block
+                    .dessert-list-img
+                        width: 300px
+                        height: 300px
+                    .dessert-featured-tag
+                        left: 6.6%
+                    .dessert-heart-icon
+                        right: 7.3%
+                    .dessert-name
+                        padding: 2px 30px
+        .pagination
+            text-align: right
+    // end of desserts-list section
+
